@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                 controller.data.length,
                     (index) => DataRow(
                   cells: [
-                    DataCell(Text(controller.data[index]['_name'],style: TextStyle(overflow: TextOverflow.ellipsis),)),
+                    DataCell(Text(controller.data[index]['_name'],style: TextStyle(),)),
                     DataCell(Text(controller.data[index]['_uid'].toString())),
                     DataCell(Text(controller.data[index]['_docType'].toString())),
                     DataCell(Image.network(height: 100,width: 100,controller.data[index]['_url'].toString())),
